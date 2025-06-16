@@ -1,7 +1,7 @@
 services:
-  Javawebcalculator:
+  javawebcalculator:
     build:
-      context: ./JavaWebCalculator
+      context: ./javaWebCalculator
     image: Javawebcalculator:latest    # ✅ Added image name
     ports:
       - "8080:8080"
