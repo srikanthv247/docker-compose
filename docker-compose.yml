@@ -1,0 +1,16 @@
+services:
+  javawebcalculator:
+    build:
+      context: ./Javawebcalculator
+    image: Javawebcalculator:latest    # ✅ Added image name
+    ports:
+      - "8080:8080"
+    container_name: Javawebcalculator
+
+  vprofile:
+    build:
+      context: ./vprofile
+    image: vprofile:latest             # ✅ Added image name
+    ports:
+      - "8081:8080"
+    container_name: vprofile
