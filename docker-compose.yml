@@ -1,5 +1,5 @@
 services:
-  javawebcalculator:
+  Javawebcalculator:
     build:
       context: ./Javawebcalculator
     image: Javawebcalculator:latest    # ✅ Added image name
