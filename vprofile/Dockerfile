@@ -12,7 +12,7 @@ RUN mvn package
 
 # Stage 2: Deploy
 FROM tomcat:9-jdk17
-COPY --from=builder /app/vprofile-project/target/*.war /usr/local/tomcat/webapps/
+COPY --from=builder /app/vprofile-project/target/*.war /usr/local/tomcat/webapps/ROOT.war
 RUN chmod 755 /usr/local/tomcat/webapps/*.war
 
 EXPOSE 8080
