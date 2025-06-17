@@ -18,9 +18,9 @@ services:
     container_name: vprofile
 
     sample-java-project:
-    build:
-      context: ./sample-java-project
-    image: sample-java-project:latest
-    ports:
+      build:
+         context: ./sample-java-project
+      image: sample-java-project:latest
+      ports:
       - "8082:8080"
-     container_name: sample-java-project
+      container_name: sample-java-project
