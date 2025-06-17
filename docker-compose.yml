@@ -24,3 +24,11 @@ services:
     ports:
       - "8082:8080"
     container_name: sample-java-project
+
+  livejava-project:
+    build:
+      context: ./livejava-project
+    image: livejava-project:latest
+    ports:
+      - "8083:8080"
+    container_name: livejava-project
